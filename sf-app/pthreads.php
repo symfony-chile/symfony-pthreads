@@ -14,3 +14,5 @@ while (@$i++ < 100) {
 }
 
 $pool->shutdown();
+
+sleep(2);
