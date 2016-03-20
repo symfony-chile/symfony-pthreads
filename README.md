@@ -11,3 +11,7 @@
 - http://php.net/manual/en/book.pthreads.php
 - https://github.com/krakjoe/pthreads
 - https://github.com/krakjoe/pthreads-autoloading-composer
+- http://stackoverflow.com/a/26323605
+- http://stackoverflow.com/a/26315943
+- https://github.com/krakjoe/pthreads/issues/68
+- https://github.com/krakjoe/pthreads/issues/350
