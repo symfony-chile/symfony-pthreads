@@ -1,0 +1,30 @@
+#
+# docker exec -it NAMECONTAINERHERE_basedatos_1 bash
+# > mysql -p CowEiGabLUSEMPERNFuL
+# > create database symfony;
+#
+basedatos:
+  image: percona:5.6.29
+  volumes:
+    - ./etc/mysql:/etc/mysql
+    - ./mysql_data:/var/lib/mysql
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=CowEiGabLUSEMPERNFuL
+
+#
+# docker exec -it NAMECONTAINERHERE_php-console_1 bash
+# > php bin/console -V
+# > php bin/console doctrine:schema:update --force
+#
+php-console:
+  build: build/php
+  volumes:
+    - ./etc/php-console:/usr/local/etc
+    - ./sf-app:/app
+  links:
+    - basedatos:mysql
+  working_dir: /app
+  entrypoint: /bin/sh -c "while true; do echo PHP Console; sleep 20; done"
+
