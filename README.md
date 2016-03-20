@@ -15,3 +15,4 @@
 - http://stackoverflow.com/a/26315943
 - https://github.com/krakjoe/pthreads/issues/68
 - https://github.com/krakjoe/pthreads/issues/350
+- https://github.com/krakjoe/pthreads/issues/103
