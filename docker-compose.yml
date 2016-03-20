@@ -17,6 +17,7 @@ basedatos:
 # docker exec -it NAMECONTAINERHERE_php-console_1 bash
 # > php bin/console -V
 # > php bin/console doctrine:schema:update --force
+# > php pthreads.php
 #
 php-console:
   build: build/php
