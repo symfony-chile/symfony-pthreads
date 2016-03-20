@@ -4,6 +4,8 @@
 
 ![coredump](https://raw.githubusercontent.com/symfony-chile/Symfony-pThreads/master/coredump.jpg)
 
+![coredump](https://raw.githubusercontent.com/symfony-chile/Symfony-pThreads/master/coredump2.jpg)
+
 ![help](https://i.imgflip.com/fmohn.jpg)
 
 ## Docs
